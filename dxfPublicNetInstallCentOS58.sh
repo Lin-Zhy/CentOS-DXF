@@ -39,7 +39,7 @@ function getIP() {
 function installSupportLibOnCentOS5() {
     echo "安装运行库..."
 
-    wget --no-check-certificate -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-5.repo
+    wget --no-check-certificate -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo
     yum clean all
     yum makecache
 
