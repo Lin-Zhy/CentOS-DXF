@@ -1,52 +1,52 @@
 # CentOS-Base.repo
- #
- # The mirror system uses the connecting IP address of the client and the
- # update status of each mirror to pick mirrors that are updated to and
- # geographically close to the client.  You should use this for CentOS updates
- # unless you are manually picking other mirrors.
- #
- # If the mirrorlist= does not work for you, as a fall back you can try the 
- # remarked out baseurl= line instead.
- #
- #
- 
- [base]
- name=CentOS-5.8 - Base
- #mirrorlist=http://mirrorlist.centos.org/?release=5&arch=$basearch&repo=os
- baseurl=http://mirrors.163.com/centos/5.8/os/$basearch/
- gpgcheck=1
- gpgkey=http://mirrors.163.com/centos/5.8/os/x86_64/RPM-GPG-KEY-CentOS-5
- 
- #released updates 
- [updates]
- name=CentOS-5.8 - Updates
- #mirrorlist=http://mirrorlist.centos.org/?release=5&arch=$basearch&repo=updates
- baseurl=http://mirrors.163.com/centos/5.8/updates/$basearch/
- gpgcheck=1
- gpgkey=http://mirrors.163.com/centos/5.8/os/x86_64/RPM-GPG-KEY-CentOS-5
- 
- #additional packages that may be useful
- [extras]
- name=CentOS-5.8 - Extras
- #mirrorlist=http://mirrorlist.centos.org/?release=5&arch=$basearch&repo=extras
- baseurl=http://mirrors.163.com/centos/5.8/extras/$basearch/
- gpgcheck=1
- gpgkey=http://mirrors.163.com/centos/5.8/os/x86_64/RPM-GPG-KEY-CentOS-5
- 
- #additional packages that extend functionality of existing packages
- [centosplus]
- name=CentOS-5.8 - Plus
- #mirrorlist=http://mirrorlist.centos.org/?release=5&arch=$basearch&repo=centosplus
- baseurl=http://mirrors.163.com/centos/5.8/centosplus/$basearch/
- gpgcheck=1
- enabled=1
- gpgkey=http://mirrors.163.com/centos/5.8/os/x86_64/RPM-GPG-KEY-CentOS-5
- 
- #contrib - packages by Centos Users
- [contrib]
- name=CentOS-5.8 - Contrib
- #mirrorlist=http://mirrorlist.centos.org/?release=5&arch=$basearch&repo=contrib
- baseurl=http://mirrors.163.com/centos/5.8/contrib/$basearch/
- gpgcheck=1
- enabled=1
- gpgkey=http://mirrors.163.com/centos/5.8/os/x86_64/RPM-GPG-KEY-CentOS-5
+#
+# The mirror system uses the connecting IP address of the client and the
+# update status of each mirror to pick mirrors that are updated to and
+# geographically close to the client.  You should use this for CentOS updates
+# unless you are manually picking other mirrors.
+#
+# If the mirrorlist= does not work for you, as a fall back you can try the 
+# remarked out baseurl= line instead.
+#
+#
+
+[base]
+name=CentOS-5.8 - Base
+#mirrorlist=http://mirrorlist.centos.org/?release=5&arch=$basearch&repo=os
+baseurl=http://mirrors.163.com/centos/5.8/os/$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.163.com/centos/5.8/os/x86_64/RPM-GPG-KEY-CentOS-5
+
+#released updates 
+[updates]
+name=CentOS-5.8 - Updates
+#mirrorlist=http://mirrorlist.centos.org/?release=5&arch=$basearch&repo=updates
+baseurl=http://mirrors.163.com/centos/5.8/updates/$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.163.com/centos/5.8/os/x86_64/RPM-GPG-KEY-CentOS-5
+
+#additional packages that may be useful
+[extras]
+name=CentOS-5.8 - Extras
+#mirrorlist=http://mirrorlist.centos.org/?release=5&arch=$basearch&repo=extras
+baseurl=http://mirrors.163.com/centos/5.8/extras/$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.163.com/centos/5.8/os/x86_64/RPM-GPG-KEY-CentOS-5
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-5.8 - Plus
+#mirrorlist=http://mirrorlist.centos.org/?release=5&arch=$basearch&repo=centosplus
+baseurl=http://mirrors.163.com/centos/5.8/centosplus/$basearch/
+gpgcheck=1
+enabled=1
+gpgkey=http://mirrors.163.com/centos/5.8/os/x86_64/RPM-GPG-KEY-CentOS-5
+
+#contrib - packages by Centos Users
+[contrib]
+name=CentOS-5.8 - Contrib
+#mirrorlist=http://mirrorlist.centos.org/?release=5&arch=$basearch&repo=contrib
+baseurl=http://mirrors.163.com/centos/5.8/contrib/$basearch/
+gpgcheck=1
+enabled=1
+gpgkey=http://mirrors.163.com/centos/5.8/os/x86_64/RPM-GPG-KEY-CentOS-5
