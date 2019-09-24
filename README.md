@@ -12,7 +12,7 @@ SSH to your server, Make sure 'wget' already installed!
 ```
 cd ~
 
-bash <(wget --timeout=10 https://raw.githubusercontent.com/idhyt/CentOS-DXF/master/dxfPublicNetInstallCentOS58.sh -q -O - )
+bash <(wget --timeout=10 https://raw.githubusercontent.com/Lin-Zhy/CentOS-DXF/master/dxfPublicNetInstallCentOS58.sh -q -O - )
 ```
 
 upload you `pvf` and `publickey.pem`, run `/home/run`
