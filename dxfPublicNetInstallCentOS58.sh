@@ -9,32 +9,8 @@
 #
 
 default_ip="192.168.200.213"
-cur_ip="0.0.0.0"
+cur_ip="47.97.167.215"
 cur_dir=`pwd`
-
-function getIP() {
-    echo "获取IP..."
-    # cur_ip=`curl -s --connect-timeout 3 http://members.3322.org/dyndns/getip`
-        cur_ip=`wget --timeout=3 http://members.3322.org/dyndns/getip -q -O -`
-    if [ -z $cur_ip ]; then
-    # cur_ip=`curl -s --connect-timeout 3 http://ifconfig.me`
-        cur_ip=`wget --timeout=3 http://ifconfig.me -q -O -`
-    fi
-
-    echo -n "$cur_ip 是否是你的外网IP？(如果不是你的外网IP或者出现两条IP地址，请回 n 自行输入) y/n [n] ?"
-    read ans
-    case $ans in
-    y|Y|yes|Yes)
-    ;;
-    n|N|no|No)
-    read -p "输入你的外网IP地址，回车（确保是英文字符的点号）：" myip
-    cur_ip=$myip
-    ;;
-    *)
-    ;;
-    esac
-    echo "当前IP: $cur_ip"
-}
 
 function installSupportLibOnCentOS5() {
     echo "安装运行库..."
@@ -46,7 +22,7 @@ function installSupportLibOnCentOS5() {
     yum -y update
     yum -y upgrade
     yum -y install mysql-server
-    yum -y install gcc gcc-c++ make zlib-devel libc.so.6 libstdc++ glibc.i686
+    yum -y install gcc gcc-c++ make zlib-devel libc.so.6 libstdc++ glibc.i686 xulrunner.i686 libXtst.i686
 
     chkconfig mysqld on
     service mysqld start
@@ -184,8 +160,6 @@ function install() {
     checkCmd
 
     downloadDXF
-
-    getIP
 
     installSupportLibOnCentOS5
 
